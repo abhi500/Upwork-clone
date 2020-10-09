@@ -1,12 +1,13 @@
 <template>
-    <footer class="container container--size">
+    <footer class="footer footer--size">
+        Footer
     </footer>
 </template>
 
 <style lang="scss" scoped>
 
-.container{
-    background-color: rgb(29, 67, 84);
+.footer{
+    background-color: $footerbackground;
 
     &--size{
         height: 100px;

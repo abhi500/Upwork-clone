@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <navbar-layout></navbar-layout>
-        <footer-layout></footer-layout>
+    <div class="container container--size">
+        <navbar-layout class="container__navbar"></navbar-layout>
+        <router-view class="container__view"></router-view>
+        <footer-layout class="container__footer"></footer-layout>
     </div>
 </template>
 
@@ -17,3 +18,28 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    &--size{
+        min-height: 100vh;
+    }
+
+    &__navbar{
+        height: 1;
+    }
+
+    &__view{
+        flex: 100%;
+    }
+
+    &__footer{
+        height: 1;
+    }
+}
+
+</style>

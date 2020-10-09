@@ -31,14 +31,17 @@ module.exports = {
                 use: [
                     // Creates `style` nodes from JS strings
                     'style-loader',
-
                     // Translates CSS into CommonJS
                     'css-loader',
-
+                  {
                     // Compiles Sass to CSS
-                    'sass-loader',
+                    loader: 'sass-loader',
+                    options: {
+                        additionalData: `@import './src/assets/styles/global-variable.scss';`
+                    },
+                  },
                 ],
-              },
+            },      
             {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
@@ -54,11 +57,11 @@ module.exports = {
                 loader: 'vue-loader'
             },
             {
-                test: /\.(png|jpg|gif)$/i,
-                use: [
-                    'file-loader',
-                    'url-loader',
-                ],
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                },
             },
             {
                 test: /\.txt$/i,
