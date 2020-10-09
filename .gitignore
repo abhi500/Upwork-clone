@@ -1,1 +1,3 @@
+#ignore all below folders
 node_modules
+dist
