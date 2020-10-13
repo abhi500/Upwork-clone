@@ -12,13 +12,12 @@
 import NavbarLayout from './layouts/NavbarLayout.vue';
 import FooterLayout from './layouts/FooterLayout.vue';
 
-
 export default {
     components: {
         'navbar-layout': NavbarLayout,
         'footer-layout': FooterLayout,
         'categories-layout': () => import('./layouts/CategoriesLayout.vue')
-    }
+    },
 }
 </script>
 

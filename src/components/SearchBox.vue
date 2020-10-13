@@ -29,7 +29,7 @@
 .icon{
     height: 15px;
     width: 15px;
-    color: $lightgreen;
+    color: $green;
     margin-left: 5px;
 }
 

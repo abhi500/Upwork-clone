@@ -17,7 +17,7 @@
     letter-spacing: .5px;
 
     &--theme{
-        background-color: $lightgreen;
+        background-color: $green;
     }
 
     &:hover{

@@ -48,7 +48,7 @@ export default {
         color: #655C6A;
 
         &:hover{
-            color: $lightgreen;
+            color: $green;
         }
     }
 }

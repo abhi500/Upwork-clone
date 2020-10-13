@@ -3,26 +3,65 @@
         <div class="container__center container__center--size">
             <h5 class="container__title">Find quality talent or agencies</h5>
             <ul class="container__list">
-                <li class="container__listitem container__listitem--size" v-for="(n, index) in 8" :key="index">
-                    <img src="../assets/images/554764919_640.jpg" class="container__image">
-                    <span class="container__name">{{ agencies[0].name }}</span>
+                <li class="container__listitem container__listitem--size" v-for="agency in agencies" :key="agency">
+                    <img :src="agency.icon" class="container__image">
+                    <span class="container__name">{{ agency.name }}</span>
                 </li>
             </ul>
-            <p class="container__label">Don't see what you're looking for? <span class="container__link">See all categories</span></p>
+            <p class="container__label">Don't see what you're looking for? 
+                <span class="container__link" @click="navigateToGivenRoute('/all')">See all categories</span>
+            </p>
         </div>
     </section>
 </template>
 
 <script>
+
+import EventBus from '../EventBus';
+
 export default {
     data() {
         return {
             agencies: [
                 {
                     name: 'Web, Mobile & Software Dev',
-                    icon: '../assets/images/xl-47f811c.jpg',
-                }
+                    icon: '/src/assets/images/svgtopng(1)/admin-support-desktop-ff2e0d4.png',
+                },
+                {
+                    name: 'Design & Creative',
+                    icon: '/src/assets/images/svgtopng(2)/customer-service-desktop-22b35df.png',
+                },
+                {
+                    name: 'Writing',
+                    icon: '/src/assets/images/svgtopng(2)/data-science-desktop-b430512.png',
+                },
+                {
+                    name: 'Sales & Marketing',
+                    icon: '/src/assets/images/svgtopng(2)/design-creative-desktop-109353b.png',
+                },
+                {
+                    name: 'Admin Support',
+                    icon: '/src/assets/images/svgtopng(2)/engineering-architecture-desktop-85b023c.png',
+                },
+                {
+                    name: 'Customer Service',
+                    icon: '/src/assets/images/svgtopng(1)/marketing-sales-desktop-ebb7dd9.png',
+                },
+                {
+                    name: 'Data Science & Analytics',
+                    icon: '/src/assets/images/svgtopng(1)/writing-desktop-1b7ea27.png',
+                },
+                {
+                    name: 'Engineering & Architecture',
+                    icon: '/src/assets/images/svgtopng(1)/writing-desktop-1b7ea27.png',
+                },
             ]
+        }
+    },
+
+    methods: {
+        navigateToGivenRoute(to){
+            EventBus.$emit('route', {to: to});
         }
     },
 }
@@ -31,10 +70,11 @@ export default {
 <style lang="scss" scoped>
 
 .container{
+    margin: 70px 0;
 
     &--size{
         width: 100%;
-        min-height: 400px;
+        min-height: 500px;
         height: auto;
     }
 
@@ -80,7 +120,7 @@ export default {
 
     &__image{
         width: auto;
-        height: 200px;
+        // height: 200px;
     }
 
     &__name{
@@ -98,6 +138,7 @@ export default {
     &__label{
         text-align: center;
         font-size: 14px;
+        margin-top: 20px;
     }
 }
 

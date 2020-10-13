@@ -47,6 +47,10 @@ export default {
             // height: 10px;
         }
     }
+
+    &__category{
+        cursor: pointer;
+    }
 }
 
 </style>

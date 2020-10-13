@@ -117,14 +117,14 @@
         text-decoration: none;
 
         &--theme{
-            background-color: $lightgreen;
+            background-color: $green;
         }
     }
 
     &__watch-button{
         padding: 10px 30px;
         border: none;
-        color: $lightgreen;
+        color: $green;
         border-radius: 2px;
         cursor: pointer;
         // background-color: white;

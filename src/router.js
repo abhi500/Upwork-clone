@@ -9,7 +9,14 @@ export default new VueRouter({
         {
             name: 'Home',
             path: '/',
-            component: () => import('./pages/HomePage.vue')
-        }
+            component: () => import('./pages/HomePage.vue'),
+            children: [
+                {
+                    name: 'all',
+                    path: 'all',
+                    component: () => import('./widgets/SeeAllCategories.vue')
+                }
+            ]
+        },
     ]
 })
