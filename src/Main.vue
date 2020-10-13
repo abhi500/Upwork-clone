@@ -1,6 +1,7 @@
 <template>
     <div class="container container--size">
         <navbar-layout class="container__navbar"></navbar-layout>
+        <categories-layout class="container__categories"></categories-layout>
         <router-view class="container__view"></router-view>
         <footer-layout class="container__footer"></footer-layout>
     </div>
@@ -11,10 +12,12 @@
 import NavbarLayout from './layouts/NavbarLayout.vue';
 import FooterLayout from './layouts/FooterLayout.vue';
 
+
 export default {
     components: {
         'navbar-layout': NavbarLayout,
-        'footer-layout': FooterLayout
+        'footer-layout': FooterLayout,
+        'categories-layout': () => import('./layouts/CategoriesLayout.vue')
     }
 }
 </script>

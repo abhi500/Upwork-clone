@@ -4,7 +4,8 @@
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+--font-family-monospace: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 
 a {

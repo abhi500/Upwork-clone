@@ -33,6 +33,8 @@ export default {
 .navbar{
     border-top: 1px solid $lightgrey;
     border-bottom: 1px solid $lightgrey;
+    position: sticky;
+    top: 0;
 
     &--size{
         height: $navbarheight;
