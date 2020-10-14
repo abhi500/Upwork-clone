@@ -5,11 +5,14 @@ import '../public/stylesheets/style.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 //font awesome
 library.add(faSearch)
 library.add(faAngleDown)
+library.add(faCheck);
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

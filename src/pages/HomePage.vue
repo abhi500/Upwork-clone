@@ -7,6 +7,7 @@
         <hireforscope></hireforscope>
         <howitworks></howitworks>
         <bestoffers></bestoffers>
+        <homepagevideo></homepagevideo>
     </div>
 </template>
 
@@ -18,6 +19,7 @@ import TruestedBusinesses from '../layouts/TrustedBusinesses.vue';
 import HireForScope from '../layouts/HireForScope.vue';
 import HowItWorks from '../layouts/HowItWorksLayout.vue';
 import BestOffers from '../layouts/BestOffers.vue';
+import HomePageVideo from '../layouts/HomePageVideo.vue';
 
 import EventBus from '../EventBus';
 
@@ -28,7 +30,8 @@ export default {
         'trustedbusinesses': TruestedBusinesses,
         'hireforscope': HireForScope,
         'howitworks': HowItWorks,
-        'bestoffers': BestOffers
+        'bestoffers': BestOffers,
+        'homepagevideo': HomePageVideo
     },
 
     mounted() {
