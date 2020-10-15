@@ -1,6 +1,8 @@
 <template>
     <footer class="footer footer--size">
-        Footer
+        <div class="footer__center footer__center--size">
+            
+        </div>
     </footer>
 </template>
 
