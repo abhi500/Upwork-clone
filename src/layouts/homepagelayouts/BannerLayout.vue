@@ -97,7 +97,7 @@
 
     &__right{
         flex: 1;
-        background-image: url('../assets/images/xl-47f811c.jpg');
+        background-image: url('/src/assets/images/xl-47f811c.jpg');
         background-position: 60%;
         background-repeat: no-repeat;
         background-size: cover;

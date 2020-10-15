@@ -14,10 +14,20 @@
                     </div>
                 </div>
             </div>
-            <div class="section__right"></div>
+            <div class="section__right">
+                <video 
+                    id="video"
+                    class="section__video section__video--size"
+                    controls
+                    poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg">
+                    <source src="/src/assets/videos/The Social Network (2010) 720p BrRip x264 - 700MB - YIFY.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </section>
 </template>
+
+scr
 
 <style lang="scss" scoped>
 
@@ -28,7 +38,7 @@
     }
 
     &--size{
-        height: 40vh;
+        height: 50vh;
     }
 
     &__center{
@@ -94,6 +104,14 @@
         justify-content: center;
         color: #a0a0a0;
         margin-left: 10px;
+    }
+
+    &__video{
+
+        &--size{
+            height: 100%;
+            width: 100%;
+        }
     }
 }
 

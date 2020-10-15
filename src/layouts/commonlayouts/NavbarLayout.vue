@@ -10,9 +10,9 @@
 
 <script>
 
-import image from '../assets/images/image.png';
-import SearchBox from '../components/SearchBox.vue';
-import NavbarMenus from '../components/NavbarMenus.vue';
+import image from '../../assets/images/image.png';
+import SearchBox from '../../components/SearchBox.vue';
+import NavbarMenus from '../../components/NavbarMenus.vue';
 
 export default {
     components: {

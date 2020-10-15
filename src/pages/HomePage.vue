@@ -8,18 +8,20 @@
         <howitworks></howitworks>
         <bestoffers></bestoffers>
         <homepagevideo></homepagevideo>
+        <skillslayout></skillslayout>
     </div>
 </template>
 
 <script>
 
-import BannerLayout from '../layouts/BannerLayout.vue';
-import Agencies from '../layouts/AgenciesLayout.vue';
-import TruestedBusinesses from '../layouts/TrustedBusinesses.vue';
-import HireForScope from '../layouts/HireForScope.vue';
-import HowItWorks from '../layouts/HowItWorksLayout.vue';
-import BestOffers from '../layouts/BestOffers.vue';
-import HomePageVideo from '../layouts/HomePageVideo.vue';
+import BannerLayout from '../layouts/homepagelayouts/BannerLayout.vue';
+import Agencies from '../layouts/homepagelayouts/AgenciesLayout.vue';
+import TruestedBusinesses from '../layouts/homepagelayouts/TrustedBusinesses.vue';
+import HireForScope from '../layouts/homepagelayouts/HireForScope.vue';
+import HowItWorks from '../layouts/homepagelayouts/HowItWorksLayout.vue';
+import BestOffers from '../layouts/homepagelayouts/BestOffers.vue';
+import HomePageVideo from '../layouts/homepagelayouts/HomePageVideo.vue';
+import SkillsLayout from '../layouts/homepagelayouts/SkillsLayout.vue';
 
 import EventBus from '../EventBus';
 
@@ -31,7 +33,8 @@ export default {
         'hireforscope': HireForScope,
         'howitworks': HowItWorks,
         'bestoffers': BestOffers,
-        'homepagevideo': HomePageVideo
+        'homepagevideo': HomePageVideo,
+        'skillslayout': SkillsLayout
     },
 
     mounted() {

@@ -3,7 +3,7 @@
         <div class="section__center section__center--size">
             <h3 class="section__title">How it works</h3>
             <ul class="section__list section__list--size">
-                <li class="section__listitem section__listitem--size" v-for="item in list" :key="item">
+                <li class="section__listitem section__listitem--size" v-for="(item, index) in list" :key="index">
                     <img :src="item.icon"  class="section__icon section__icon--size">
                     <h5 class="section__label">{{ item.name }}</h5>
                     <p class="section__description">{{ item.description }}</p>

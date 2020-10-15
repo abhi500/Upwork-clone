@@ -9,14 +9,14 @@
 
 <script>
 
-import NavbarLayout from './layouts/NavbarLayout.vue';
-import FooterLayout from './layouts/FooterLayout.vue';
+import NavbarLayout from './layouts/commonlayouts/NavbarLayout.vue';
+import FooterLayout from './layouts/commonlayouts/FooterLayout.vue';
 
 export default {
     components: {
         'navbar-layout': NavbarLayout,
         'footer-layout': FooterLayout,
-        'categories-layout': () => import('./layouts/CategoriesLayout.vue')
+        'categories-layout': () => import('./layouts/commonlayouts/CategoriesLayout.vue')
     },
 }
 </script>

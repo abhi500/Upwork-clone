@@ -3,7 +3,7 @@
         <div class="container__center container__center--size">
             <h5 class="container__title">Find quality talent or agencies</h5>
             <ul class="container__list">
-                <li class="container__listitem container__listitem--size" v-for="agency in agencies" :key="agency">
+                <li class="container__listitem container__listitem--size" v-for="(agency, index) in agencies" :key="index">
                     <img :src="agency.icon" class="container__image">
                     <span class="container__name">{{ agency.name }}</span>
                 </li>
@@ -17,7 +17,7 @@
 
 <script>
 
-import EventBus from '../EventBus';
+import EventBus from '../../EventBus';
 
 export default {
     data() {

@@ -3,7 +3,7 @@
         <div class="section__center section__center--size">
             <span class="section__label">Trusted by 5M+ businesses</span>
             <ul class="section__list section__list--size">
-                <li v-for="image in images" :key="image" class="section__listitem">
+                <li v-for="(image, index) in images" :key="index" class="section__listitem">
                     <img :src="image" class="section__image section__image--size">
                 </li>
             </ul>
