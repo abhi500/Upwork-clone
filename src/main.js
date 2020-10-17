@@ -13,7 +13,7 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faApple } from '@fortawesome/free-brands-svg-icons';
 import { faAndroid } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -28,6 +28,7 @@ library.add(faYoutube)
 library.add(faInstagram)
 library.add(faApple)
 library.add(faAndroid)
+library.add(faUser)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

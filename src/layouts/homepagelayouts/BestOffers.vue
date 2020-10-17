@@ -8,7 +8,9 @@
             <ul class="section__list 
                 section__list--size">
                 <li class="section__listitem 
-                    section__listitem--size" v-for="(item, index) in list" :key="index">
+                    section__listitem--size
+                    section__listitem--theme"
+                    v-for="(item, index) in list" :key="index">
                     <h3>{{ item.title }}</h3>
                     <button class="section__button 
                         section__button--theme 
@@ -135,6 +137,10 @@ export default {
         &--size{
             height: auto;
             width: 300px;
+        }
+
+        &--theme{
+            background-color: white;
         }
     }
 
