@@ -7,7 +7,7 @@
                     section__listitem--size" 
                     v-for="(item, index) in topSkills" :key="index">
 
-                    <a href="#" class="section__link">{{ item }}</a>
+                    <a href="#" class="section__link section__link--disable">{{ item }}</a>
                 </li>
             </ul>
             <h2 class="section__headline">Trending skills</h2>
@@ -16,7 +16,7 @@
                     section__listitem--size" 
                     v-for="(item, index) in trendingSkills" :key="index">
 
-                    <a href="#" class="section__link">{{ item }}</a>
+                    <a href="#" class="section__link section__link--disable">{{ item }}</a>
                 </li>
             </ul>
         </div>
@@ -90,6 +90,11 @@ export default {
 
         &:hover{
             color: $green;
+            text-decoration: underline;
+        }
+
+        &--disable{
+            text-decoration: none;
         }
         
     }
