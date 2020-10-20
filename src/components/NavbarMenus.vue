@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <ul class="container__menus">
-            <li class="container__menu-item" v-for="menu in menus" :key="menu">
+            <li class="container__menu-item" v-for="menu in menus" :key="menu" @click="navTo(menu)">
                 {{ menu }}
             </li>
         </ul>
@@ -21,6 +21,17 @@ export default {
     data() {
         return {
             menus: ['HOW IT WORKS', 'SOLUTIONS', 'ENTERPRISE', 'LOG IN']
+        }
+    },
+
+    methods: {
+
+        /**
+         * nav to page
+         */
+        navTo(navitem){
+            if(navitem === 'LOG IN')
+                this.$router.push({ name: 'Login' })
         }
     },
 }

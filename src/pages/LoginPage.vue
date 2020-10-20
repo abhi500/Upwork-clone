@@ -6,10 +6,24 @@
         <div class="container__login 
             container__login--size 
             container__login--theme">
-            <h2 class="container__title">Log in and get to work</h2>
-            <div class="container__email">
-                <font-awesome-icon icon="user" class="icon"/>
-                <input type="text" placeholder="Username or Email" class="container__input">    
+            <div class="container__center container__center--size">
+                <h2 class="container__title">Log in and get to work</h2>
+                <div class="container__email">
+                    <font-awesome-icon 
+                        icon="user" 
+                        class="icon icon--size"/>
+                    <input type="email" 
+                        placeholder="Username or Email" 
+                        class="container__input">    
+                </div>
+                <button class="container__continue-button 
+                    container__continue-button--theme 
+                    container__continue-button--size">Continue</button>
+                <div class="container__line">
+                    <hr class="line">
+                    <span class="or-label">or</span>
+                    <hr class="line">
+                </div>
             </div>
         </div>
         <auth-footer class="align-bottom"></auth-footer>
@@ -50,29 +64,100 @@ export default {
         box-shadow: 2px 2px 4px 4px $lightgrey;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         &--size{
             height: 600px;
             width: 500px;
         }
 
-        &--theme{
+        &--theme{   
             background-color: white;
         }
+    }
+
+    &__center{
+        display: flex;
+        flex-direction: column;
+
+        &--size{
+            width: 310px;
+        }
+    }
+
+    &__title{
+        font-weight: 500;
+        margin-top: 50px;
     }
 
     &__input{
         padding: 10px 20px;
         border: none;
+
+        &::placeholder{
+            font-size: 13px;
+        }
     }
 
     &__email{
         border: 1px solid $lightgrey;
+        margin-top: 30px;
+        padding: 0 10px;
+
     }
+
+    &__continue-button{
+        border: none;
+        color: white;
+        margin-top: 20px;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px 3px $lightgrey;
+        border-radius: 2px;
+
+        &:hover{
+            box-shadow: 2px 2px 5px 5px $lightgrey;
+        }
+
+        &--theme{
+            background-color: $green;
+        }
+
+        &--size{
+            width: 100%;
+            height: 40px;
+        }
+    }
+
+    &__line{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+.or-label{
+    margin: 0 10px;
+    color: grey;
+    font-size: 13px;
 }
 
 .align-bottom{
     margin-top: auto;
+}
+
+.icon{
+    color: $green;
+    
+    &--size{
+        height: 13px;
+    }
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid $lightgrey;
 }
 
 </style>
