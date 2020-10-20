@@ -30,8 +30,11 @@ export default {
          * nav to page
          */
         navTo(navitem){
-            if(navitem === 'LOG IN')
-                this.$router.push({ name: 'Login' })
+            switch(navitem){
+                case 'LOG IN':
+                    this.$router.push({ name: 'Login' })
+                    break;
+            }
         }
     },
 }

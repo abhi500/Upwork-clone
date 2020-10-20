@@ -63,6 +63,7 @@ export default {
     
     &--size{
         min-height: 100vh;
+        height: auto;
     }
 
     &--theme{

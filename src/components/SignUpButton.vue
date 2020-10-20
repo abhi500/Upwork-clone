@@ -1,8 +1,20 @@
 <template>
-    <div class="button button--theme">
+    <div class="button button--theme" @click="navToSignUpPage">
         Sign Up
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        navToSignUpPage(){
+            this.$router.push({
+                name: 'Signup'
+            })
+        }
+    },
+}
+</script>
 
 <style lang="scss" scoped>
 
