@@ -1,5 +1,5 @@
 #ignore all below folders
 node_modules
 dist
-src/assets/images
+# src/assets/images
 src/assets/videos
