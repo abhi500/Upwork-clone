@@ -19,7 +19,7 @@
 
 import BannerLayout from '../layouts/homepagelayouts/BannerLayout.vue';
 import Agencies from '../layouts/homepagelayouts/AgenciesLayout.vue';
-import TruestedBusinesses from '../layouts/homepagelayouts/TrustedBusinesses.vue';
+import TruestedBusinesses from '../layouts/commonlayouts/TrustedBusinesses.vue';
 import HireForScope from '../layouts/homepagelayouts/HireForScope.vue';
 import HowItWorks from '../layouts/homepagelayouts/HowItWorksLayout.vue';
 import BestOffers from '../layouts/homepagelayouts/BestOffers.vue';

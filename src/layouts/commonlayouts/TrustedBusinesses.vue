@@ -50,7 +50,7 @@ export default {
     }
 
     &__label{
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         margin-top: 30px;
     }

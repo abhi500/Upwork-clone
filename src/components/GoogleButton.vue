@@ -4,13 +4,13 @@
             class="button__icon 
                 button__icon--size
                 button__icon--theme">
-        <span class="button__label">Sign In with Google</span>
+        <span class="button__label">{{ name }}</span>
     </button>
 </template>
 
 <script>
 export default {
-    
+    props: ['name']
 }
 </script>
 

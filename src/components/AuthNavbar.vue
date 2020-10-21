@@ -1,9 +1,9 @@
 <template>
-    <nav class="navbar navbar--theme navbar--size">
+    <nav class="navbar navbar--theme navbar--size" :class="{'hide-shadow': isSignupPage}">
         <div class="navbar__container navbar__container--size">
             <img src="/src/assets/images/image.png" class="navbar__icon navbar__icon--size" @click="navToHomePage">
             <p class="navbar__label" v-if="isSignupPage">Already have an account? 
-                <a href="#" class="navbar__link">Log in</a>
+                <router-link to="/login" class="navbar__link">Log in</router-link>
             </p>
         </div>
     </nav>
@@ -75,6 +75,10 @@ export default {
             text-decoration: underline;
         }
     }
+}
+
+.hide-shadow{
+    box-shadow: none;
 }
 
 </style>

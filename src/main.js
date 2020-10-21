@@ -15,6 +15,7 @@ import { faAndroid } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -31,6 +32,7 @@ library.add(faApple)
 library.add(faAndroid)
 library.add(faUser)
 library.add(faGoogle)
+library.add(faEnvelope)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

@@ -7,7 +7,8 @@
              <div class="container__login 
                 container__login--size 
                 container__login--theme">
-                <div class="container__center container__center--size">
+                <form action="#" 
+                    class="container__center container__center--size">
                     <h2 class="container__title">Log in and get to work</h2>
                     <div class="container__email">
                         <font-awesome-icon 
@@ -25,9 +26,9 @@
                         <span class="or-label">or</span>
                         <hr class="line">
                     </div>
-                    <google-button class="mt-1"></google-button>
-                    <apple-button class="mt-1"></apple-button>
-                </div>
+                    <google-button class="mt-1" name="Sign in with Google"></google-button>
+                    <apple-button class="mt-1" name="Sign in with Apple"></apple-button>
+                </form>
             </div>
             <div class="container__bottom 
                 container__bottom--size 
@@ -158,7 +159,6 @@ export default {
         border: 1px solid $lightgrey;
         margin-top: 30px;
         padding: 0 10px;
-
     }
 
     &__continue-button{
